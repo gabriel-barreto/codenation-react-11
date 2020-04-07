@@ -1,0 +1,13 @@
+container()
+  padding 0 3.2rem
+  width: 100%
+
+  @media screen and (min-width: breakpoint('sm'))
+    $h-pd = calc((100% - 640px)/2)
+    padding 0 $h-pd
+  @media screen and (min-width: breakpoint('md'))
+    $h-pd = calc((100% - 800px)/2)
+    padding 0 $h-pd
+  @media screen and (min-width: breakpoint('lg'))
+    $h-pd = calc((100% - 1200px)/2)
+    padding 0 $h-pd
