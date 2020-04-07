@@ -1,0 +1,39 @@
+{
+  "name": "react-11",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gabriel Barreto <barreto-gabriel@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "",
+    "start": ""
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "autoprefixer-stylus": "^1.0.0",
+    "browser-sync": "^2.26.7",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-copy": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylus": "^2.7.0",
+    "husky": "^4.2.3",
+    "rimraf": "^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
+  }
+}
